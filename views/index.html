@@ -1,19 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/peri-dico/css/StyleIndex.css">
+    <link rel="stylesheet" href="/peri-dico/assets/css/index.css">
+    <link rel="stylesheet" href="/peri-dico//assets//css//climaStyle.css">
+    <script src="/peri-dico/assets/js/climaScript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title>
+    <title>La buena noticia</title>
+    <script language='javascript'>
+        function desplaza1(el_left, el_top) {
+            left_ahora = parseInt(document.getElementById('capa1').style.left);
+            top_ahora = parseInt(document.getElementById('capa1').style.top);
+            document.getElementById('capa1').style.left = (left_ahora + el_left) + 'px';
+            document.getElementById('capa1').style.top = (top_ahora + el_top) + 'px';
+
+            document.f1.coords.value = (left_ahora + el_left) + 'x' + (top_ahora + el_top);
+        }
+    </script>
+    <style type='text/css'>
+        input.ejemplo {
+            text-align: left;
+            font-size: 16px;
+            font-family: Courier;
+            background-color: #ccddff;
+            color: blueViolet;
+        }
+    </style>
+
 </head>
+
 <body>
     <nav>
 
     </nav>
 
     <section class="last-news">
-        <h1 class="title-lastNews">ULTIMAS NOTICIAS</h1>
+        <h1 class="title-lastNews">LA BUENA NOTICA</h1>
+        <section class="time">
+            <script src="/peri-dico//assets/js/functionTime.js"></script>
+            <script>
+                document.write('La fecha de hoy es:' + retornarFecha());
+                document.write('<br>');
+                document.write('La hora es:' + retornarHora());
+            </script>
+
+            <section class="world">
+                <div id='capa1' style='position:absolute;left:200px;top:50px'>
+                    <img src='https://c.tenor.com/TWY96t0sU3gAAAAC/breaking-news.gif'>
+                </div>
+            </section>
+
+            <section class="wheater">
+                <!-- weather widget start --><a target="_blank" href="https://hotelmix.es/weather/la-paz-13481"><img
+                        src="https://w.bookcdn.com/weather/picture/1_13481_1_4_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=582&anc_id=28321"
+                        alt="booked.net" /></a><!-- weather widget end -->
+            </section>
+        </section>
+
     </section>
+
+
+
+
+
+
+    <div class="api">
+        <div class="container">🌞 This demo needs an OpenWeather API key to work. <a target="_blank" href="https://home.openweathermap.org/users/sign_up">Get yours here for free!</a>
+        </div>
+      </div>
+      <section class="top-banner">
+        <div class="container">
+          <h1 class="heading">Simple Weather App</h1>
+          <form>
+            <input type="text" placeholder="Search for a city" autofocus>
+            <button type="submit">SUBMIT</button>
+            <span class="msg"></span>
+          </form>
+        </div>
+      </section>
+      <section class="ajax-section">
+        <div class="container">
+          <ul class="cities"></ul>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="container">
+          <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+          </small>
+        </div>
+      </footer>
+
+      
+      <section class="cards">
+        <section class="card1">
+            <h1 class="title1">NOTICIA 1</h1>
+
+        </section>
+
+        <section class="card2">
+            <h1 class="title2">NOTICIA 2</h1>
+
+        </section>
+
+        <section class="card2">
+            <h1 class="title2">NOTICIA 3</h1>
+
+        </section>
+
+        <section class="card2">
+            <h1 class="title2">NOTICIA 4</h1>
+
+        </section>
+
+        <section class="card2">
+            <h1 class="title2">NOTICIA 5</h1>
+
+        </section>
+
+    </section>
+    
 </body>
+
 </html>

@@ -4,3 +4,74 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
 }
+
+.last-news{
+    background-color:  #557588;
+    width: 100%;
+    height: 150px;
+    font-size: 1.6rem;
+
+}
+
+
+.title-lastNews{
+    font-size: 6.5rem;
+    text-align: center;
+    padding-top: 1.5%;
+    color: antiquewhite;
+}
+
+.last-news .time{
+    padding-top: 2%;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+
+.last-news #capa1{
+    padding-top : 10%;
+    position: absolute;
+    text-align: center;
+    padding-left: 50%;
+}
+
+
+.cards {
+    padding-top: 5%;
+    width: 100%;
+}
+
+.cards .card1{
+    
+    font-size: 3.5rem;
+    width: 25%;
+    height: 250px;
+    background-color:#D0E9FB;
+    padding-left: 2%;
+    
+    display: inline-block;
+    
+
+}
+.card1 .title1{
+    color:black;
+    text-align: center;
+
+}
+
+
+.cards .card2{
+    
+    font-size: 3.5rem;
+    width: 25%;
+    height: 250px;
+    background-color:#D0E9FB;
+    position: relative;
+    margin-left: 2%;
+    display: inline-block;
+}
+.card2 .title2{
+    color:black;
+    text-align: center;
+
+}
