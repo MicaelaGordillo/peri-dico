@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,13 @@
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/climaStyle.css">
     <script src="../assets/js/climaScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/externos/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="../assets/css/contactanos.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La buena noticia</title>
     <script language='javascript'>
@@ -32,14 +40,39 @@
 </head>
 
 <body>
-    <nav>
-
-    </nav>
-
+    <!-- Navbar -->
+<nav style="position: fixed; width:98.8vw;z-index:100;" class="navbar navbar-expand-custom navbar-mainbg">
+    <a style="font-size: 20px;" class="navbar-brand navbar-logo" href="./index.html">La buena noticia</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item active">
+                <a class="nav-link" onClick="location.href='index.html'" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="location.href='deportes.html'" href="javascript:void(0);"><i class="far fa-address-book"></i>Deportes</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" onClick="location.href='ultimaHora.html'" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Última hora</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="location.href='publicidad.html'" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Publicidad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="location.href='contactanos.html'" href="javascript:void(0);"><i class="far fa-copy"></i>Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div style="height: 70px;"></div>
     <section class="last-news">
         <h1 class="title-lastNews">LA BUENA NOTICIA</h1>
         <section class="time">
-            <script src="/peri-dico//assets/js/functionTime.js"></script>
+            <script src="../assets/js/functionTime.js"></script>
             <script>
                 document.write('La fecha de hoy es:' + retornarFecha());
                 document.write('<br>');
@@ -66,10 +99,7 @@
 
 
 
-    <div class="api">
-        <div class="container">🌞 This demo needs an OpenWeather API key to work. <a target="_blank" href="https://home.openweathermap.org/users/sign_up">Get yours here for free!</a>
-        </div>
-      </div>
+    
       <section class="top-banner">
         <div class="container">
           <h1 class="heading">Simple Weather App</h1>
@@ -113,7 +143,10 @@
         </section>
 
     </section>
-    
+    <script src="../assets/js/contactanos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>    
 </body>
 
 </html>

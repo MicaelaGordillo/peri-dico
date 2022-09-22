@@ -52,7 +52,6 @@
     font: 1rem/1.3 "Roboto", sans-serif;
     background: var(--bg_main);
     color: var(--text_dark);
-    padding: 70px;
   }
   
   .container {
@@ -198,9 +197,6 @@
   /* MQ
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   @media screen and (max-width: 1000px) {
-    body {
-      padding: 30px;
-    }
     
     .ajax-section .cities {
       grid-template-columns: repeat(3, 1fr);
