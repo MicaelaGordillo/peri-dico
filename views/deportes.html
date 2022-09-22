@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <!--Bootsatrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://js.cx/libs/animate.js"></script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../assets/css/deportes.css">
+    <!--js-->
+    <script type="text/javascript" src="../assets/js/deportes.js"></script>
+</head>
+<body>
+    <div id="field">
+        <img src="https://js.cx/clipart/ball.svg" width="70" id="ball">
+    </div>
+    <script>
+        function makeEaseOut(timing) {
+          return function(timeFraction) {
+            return 1 - timing(1 - timeFraction);
+          }
+        }
+        function bounce(timeFraction) {
+          for (let a = 0, b = 1; 1; a += b, b /= 2) {
+            if (timeFraction >= (7 - 4 * a) / 11) {
+              return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+            }
+          }
+        }
+        ball.onclick = function() {
+          let to = field.clientHeight - ball.clientHeight;
+          animate({
+            duration: 2000,
+            timing: makeEaseOut(bounce),
+            draw(progress) {
+              ball.style.top = to * progress + 'px'
+            }
+          });
+        };
+    </script>
+    <div id="noticia">
+        <div>
+            <h2>Deportes</h2>
+        </div>
+        <div class="deporte-inicial">
+            <div class="deporte-inicial-texto">
+                <div>
+                    <p>Cruzeiro, el exequipo de Marcelo Martins, regresó a la primera división de Brasil</p>
+                    <p style="font-size: 15px;">El equipo de Belo Horizonte retorna a la máxima categoría de fútbol brasileño de la mano de Ronaldo Nazário, que compró el equipo a finales del año pasado</p>
+                </div>
+            </div>
+            <div>
+                <img src="../assets/images/deportes/imagen1.jpg" width="100%">
+            </div>
+        </div>
+    </div>
+    <div id="informacion">
+        <div id="noticias">
+            <!--Lista de noticias deportivas-->
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Nº</th>
+                    <th></th>
+                    <th>Equipo</th>
+                    <th>Pts.</th>
+                    <th>Pj</th>
+                    <th>Pg</th>
+                    <th>Pe</th>
+                    <th>Pp</th>
+                    <th>Gf</th>
+                    <th>Gc</th>
+                    <th>Df</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/70.gif" alt=""></td>
+                    <td>Bolívar</td>
+                    <td>43</td>
+                    <td>18</td>
+                    <td>14</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>42</td>
+                    <td>16</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/74.gif" alt=""></td>
+                    <td>The Strongest</td>
+                    <td>42</td>
+                    <td>18</td>
+                    <td>13</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>44</td>
+                    <td>16</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/3254.gif" alt=""></td>
+                    <td>Always Ready</td>
+                    <td>36</td>
+                    <td>17</td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>40</td>
+                    <td>16</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/1657.gif" alt=""></td>
+                    <td>Nacional Potosí</td>
+                    <td>30</td>
+                    <td>18</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>29</td>
+                    <td>31</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/938.gif" alt=""></td>
+                    <td>Guabirá</td>
+                    <td>28</td>
+                    <td>18</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>26</td>
+                    <td>24</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/97.gif" alt=""></td>
+                    <td>Oriente Petrolero</td>
+                    <td>27</td>
+                    <td>18</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/228.gif" alt=""></td>
+                    <td>Aurora</td>
+                    <td>25</td>
+                    <td>18</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>19</td>
+                    <td>29</td>
+                    <td>-10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/8172.gif" alt=""></td>
+                    <td>Palmaflor</td>
+                    <td>23</td>
+                    <td>18</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>26</td>
+                    <td>23</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/236.gif" alt=""></td>
+                    <td>Wilstermann</td>
+                    <td>22</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>19</td>
+                    <td>24</td>
+                    <td>-5</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/229.gif" alt=""></td>
+                    <td>Blooming</td>
+                    <td>21</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>25</td>
+                    <td>32</td>
+                    <td>-7</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/10529.gif" alt=""></td>
+                    <td>Real Tomayapo</td>
+                    <td>20</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>21</td>
+                    <td>28</td>
+                    <td>-7</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/3319.gif" alt=""></td>
+                    <td>Independiente Petrolero</td>
+                    <td>19</td>
+                    <td>18</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/271.gif" alt=""></td>
+                    <td>Universitario (Sucre)</td>
+                    <td>19</td>
+                    <td>18</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>34</td>
+                    <td>-17</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/7360.gif" alt=""></td>
+                    <td>Royal Pari</td>
+                    <td>17</td>
+                    <td>17</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>18</td>
+                    <td>27</td>
+                    <td>-9</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/3321.gif" alt=""></td>
+                    <td>Real Santa Cruz</td>
+                    <td>15</td>
+                    <td>18</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>11</td>
+                    <td>16</td>
+                    <td>36</td>
+                    <td>-20</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td><img src="//1287719000.rsc.cdn77.org/escudos_ch/7357.gif" alt=""></td>
+                    <td>Universitario de Vinto</td>
+                    <td>14</td>
+                    <td>18</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>17</td>
+                    <td>29</td>
+                    <td>-12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+</body>
+</html>

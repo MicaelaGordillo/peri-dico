@@ -1,0 +1,80 @@
+/*Quitar los estilos generales*/
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #84C0F7;
+    margin: 25px 80px;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 10% 88%;
+    grid-template-areas: "pelota noticia"
+                         "informacion informacion";
+}
+#informacion {
+    grid-area: informacion;
+}
+/*Información*/
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.deporte-inicial{
+    background-color: #91ce7b;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 25px;
+}
+.deporte-inicial-texto {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+/*Cards*/
+.card-deck {
+    margin-bottom: 30px;
+}
+.card {
+    background-color: #4C8AB9;
+    color: #fff;
+}
+.card-text {
+    color: rgb(221, 221, 221);
+}
+/*Tabla*/
+table {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+th, td {
+    color: #fff;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 2px;
+}
+/*Animación*/
+#field {
+    margin-right: 20px;
+    height: 100%;
+    border-bottom: 3px black groove;
+    position: relative;
+}
+#ball {
+    position: absolute;
+    cursor: pointer;
+}
