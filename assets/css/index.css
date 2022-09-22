@@ -75,3 +75,20 @@
     text-align: center;
 
 }
+
+
+.cards .card3{
+    
+    font-size: 3.5rem;
+    width: 25%;
+    height: 250px;
+    background-color:#D0E9FB;
+    position: relative;
+    margin-left: 2%;
+    display: inline-block;
+}
+.card2 .title3{
+    color:black;
+    text-align: center;
+
+}s
